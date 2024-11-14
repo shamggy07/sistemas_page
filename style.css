@@ -1,0 +1,562 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+.sidebar_nav {
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidebar_nav a {
+    padding: 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    text-align: justify;
+}
+
+.sidebar_nav a:hover {
+    color: white;
+    font-weight: 700;
+    background-color: red;
+    border-radius: 10px;
+}
+
+.content_main {
+    margin-left: 250px; 
+    padding: 25px;
+    
+    width: 75%; 
+    height: 100vh;
+    border: none;
+}
+
+.container{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.267);
+    padding: 30px;
+    max-width: 1000px;
+    margin: 10px auto;
+    margin-left: auto;
+}
+
+.container_menu{
+    background-color: rgb(0, 0, 0);
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px rgb(0, 0, 0);
+    padding: 20px;
+    max-width: 1000px;
+    margin: 10px auto;
+    margin-left: auto;
+    color: white;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: bold;
+
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+    margin-right: 10px;
+}
+
+.clients-table, .citas_agendadas{
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.clients-table th, .clients-table td,  .citas_agendadas td{ 
+    text-align: left;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.clients-table th, .ventas-table th, .citas_agendadas th{
+    background-color: #dddddd;
+    font-weight: bold;
+    padding: 15px;
+}
+
+.edit-btn{
+    background-color: #007bff;
+    color: white;
+    margin-left:10px ;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    
+}
+
+.delete-btn{
+    background-color: #d9534f;
+    color: white;
+    margin-left:10px ;
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+}
+
+.edit-btn:hover{
+    background-color: #0056b3;
+}
+
+.delete-btn:hover{
+    background-color: #e9211a;
+}
+
+.add-client-btn{
+    background-color: #f14b45;
+    color:white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.add-client-btn:hover{
+    background-color: #e9211a;
+}
+
+#nombre, #id{
+    display: inline-block;
+    background-color: #ffffff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    width: 200px;
+}
+
+.calendario-cuadro{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#simbologia{
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 30%;
+}
+
+.hora{
+    padding: 20px;
+}
+.calendar{
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-table{
+    width: 70%;
+    border-collapse: collapse;
+    align-items: center;
+    justify-content: center;
+}
+
+.calendar-table th, .calendar-table td{
+    width: 14%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd; 
+}
+
+.calendar-table td{
+    background-color: #f0f0f0;
+}
+
+.disponibilidad-table{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-collapse: collapse;
+    
+}
+
+.disponibilidad-table td, .disponibilidad-table th{
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: justify;
+
+}
+
+#colorDisponible{
+    background-color: #03b603
+}
+#colorNoDisponible{
+    background-color: #db160f
+}
+#colorReagendado{
+    background-color: #0461c5
+}
+
+.tipodeTerapia{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#therapy-type{
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-btn, .Buscar{
+    background-color: #f14b45;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-btn:hover, .Buscar:hover{
+    background-color: #e9211a;
+}
+
+.ventas-table{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #c9c9c960;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-right-radius:  8px;
+}
+
+.ofertas-table td {
+    text-align: left;
+    padding: 15px;
+}
+
+.ventas-table td{
+    text-align: center;
+    padding: 10px;
+}
+
+.buttons-ventas{
+    padding: 5px;
+    width: 190px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #c9c9c960;
+    .ventas-btn-ingresos, .ventas-btn-gastos{
+        box-shadow: #000;
+        border: none;
+        padding: 10px;
+        width: 90px;
+        border-radius: 8px;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.ventas-btn-gastos:hover, .ventas-btn-ingresos:hover{
+    background-color: rgb(212, 212, 212);
+}
+
+.container-finanzas {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.267);
+    padding: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/*Div que divide cada coso de finanzas*/
+.finanzas-item {
+    
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    border-radius: 10px;
+}
+
+/* Sección de select y radio */
+.Select-Finanzas, .Select-radio {
+    background-color: #dddddd;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+}
+
+.Select-Finanzas label, .Select-radio label {
+    font-weight: bold;
+    color: #333;
+    
+}
+
+/* Botón */
+input[type="button"] {
+    display: flex;
+    margin: 20px 0 0;
+    padding: 10px;
+    width: 50%;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="button"]:hover {
+    background-color: #333;
+}
+
+.title-finanzas{
+    background-color: white;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+}
+
+/*El div de los grafos*/
+.Finanzas-TODES, .Finanzas-UNE {
+    background-color: #fdfdfd;
+    padding: 20px;
+    width: 60%;
+    flex-shrink: 0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.267);
+}
+
+.Finanzas-TODES h3, .Finanzas-UNE h3 {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+canvas {
+    width: 100% !important;
+    height: 300px !important;
+}
+
+
+.filtracion-finanzas {
+    background-color: #000;
+    padding: 20px;
+    width: 40%;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+/* Estilo del selector */
+select {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #333;
+}
+
+select:hover {
+    border-color: #333;
+}
+
+.Select-Finanzas, .Select-radio {
+    
+    background-color: #f1f1f1;
+}
+
+/* Etiquetas de los selectores */
+.Select-Finanzas label, .Select-radio label {
+    color: #444;
+    font-size: 14px;
+}
+
+/* Mejora para el botón */
+input[type="button"] {
+    background-color: #f14b45;
+    transition: background-color 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #e9211a;
+}
+
+
+.Mision, .Visión{
+    background-color:#f0f0f0;
+    padding: 30px;
+    border-radius: 15px;
+    
+    text-align: center;
+    align-items: center;
+    p{
+        font-size: large;
+    }
+}
+
+.subtitle{
+    background-color: #cccccc;
+    font-style: bold;
+    font-size: larger;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/*COMISIONES*/
+
+.headerComision {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: #a1a1a160;
+    padding: 20px;
+    margin: auto;
+}
+
+.detallesEmpresa { 
+    /*background-color: #d9534f;*/
+    padding: 25px;
+    display: flex;
+}
+.informacionComision{
+    /*background-color: #0056b3;*/
+    width: 50%;
+    padding: 20px;
+}
+.logoEmpresaInformacion{
+    /*background-color: #007bff;*/
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    height: auto !important;
+    img{
+        height: 150px;
+        width: auto;
+    }
+}
+/*.detallesEmpresa{
+    background-color: aquamarine;
+}*/
+.detallesComision {
+   /* background-color: violet;*/
+    padding: 25px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.comisiones-table {
+    margin: auto;
+    border-collapse: collapse;
+    width: 85%;
+     
+}
+.comisiones-table thead th{
+    border-bottom:  1.5px solid #000;
+    padding: 10px;
+    text-align: center;
+    background-color: #929090;
+}
+
+.comisionesTotal-table thead th { 
+    border-bottom:  1.5px solid #000;
+    padding: 10px;
+    text-align: center;
+    background-color: #d6d4d4;
+}
+
+.comisiones-table td, .comisionesTotal-table td{
+    background-color: #f0f0f0;
+    padding: 15px;
+}
+
+.comisionesTotal-table {
+    width: 250px;
+    margin-left: 60%;
+    border-collapse: collapse;
+    background-color: #d8d8d8;
+    border: 5px;
+    justify-content: space-between;
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end; /* Coloca el botón en el extremo derecho */
+    padding: 10px; /* Agrega espacio alrededor si es necesario */
+}
+
+#imprimirPDF {
+    padding: 10px 20px;
+    background-color: #f14b45;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px; /* Opcional: hace el botón más atractivo */
+}
+#imprimirPDF:hover{
+    background-color: #e9211a;
+}
+.headerComision > a{
+    font-style: none !important;
+    color: #000;
+}
+
+.detallesComisionBtn{
+    background-color: #007bff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+}
+.detallesComisionBtn:hover{
+    background-color: #0056b3;
+}
+a{ text-decoration: none; }
+i{ color: #000;}
+
+.comisiones{
+    padding-inline: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
+    border-bottom-right-radius: 15px;
+
+    background-color: #dbd9d938;
+}
+
+.todos{
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.267);
+}

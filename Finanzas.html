@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gráficas de Finanzas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="graficas.js" defer></script>
+    <script src="https://kit.fontawesome.com/e5bd296ab2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Todes-->
+    <div class="container-finanzas">
+        <h2 class="title"><span class="icon"><i class="fa-solid fa-coins"></i></span> Resumen de Ventas</h2>
+        
+        <div class="finanzas-item">
+            <div class="filtracion-finanzas">
+               <nav class="title-finanzas"><h2>Filtrado por Categoria</h2>
+            </nav>   
+            <br>
+                <div class="Select-Finanzas">
+                    <label>Seleccione una Opcion</label>
+                    
+                    <select class="Filtracion-type">
+                        <option value="disabled select">Seleccionar una Opción</option>
+                        <option value="Opción1">Cantidad de unidades vendidas</option>
+                        <option value="Opción2">Ventas por Sucursales</option>
+                        <option value="Opción3">Ingresos por ventas</option>
+                        <option value="Opción4">Productos más vendidos</option>
+                        <option value="Opción5">Margen de Beneficio</option>
+                        <option value="Opción6">Devoluciones</option>
+                        <option value="Opción7">Cancelaciones</option>
+                    </select>
+                </div> 
+                <div class="Select-radio">
+                    <label>Periodo de Tiempo:</label><br>
+                    <input type="radio" name="select-radio" value="Semana"> Semana<br>
+                    <input type="radio" name="select-radio" value="Meses"> Mes<br>
+                    <input type="radio" name="select-radio" value="Años"> Año<br>
+                </div>
+                <input type="button" value="Actualizar">
+                <input type="button" value="Imprimir PDF">
+                <!--<button class="delete-btn">Imprimir PDF</button>-->
+            </div>
+
+            <div class="Finanzas-TODES">
+                <h3>Clasificación de Productos</h3>
+                <canvas id="graficaTODES"></canvas>
+            </div>
+        </div>
+
+        <br>
+        <!--UNE-->
+        <div class="finanzas-item">
+            
+            <div class="Finanzas-UNE">
+                <h3>Correlación de Ventas</h3>
+                <canvas id="graficaUNE"></canvas>
+            </div>
+            
+            <div class="filtracion-finanzas">
+                <nav class="title-finanzas">
+                    <h2>Filtrado por Producto</h2>
+                </nav>   
+                <br>
+                <div class="Select-Finanzas">
+                    
+                    <label>Seleccione un Producto</label>
+                    <br>
+                    <select id="Producto-type" required>
+                        <option value="disabled select">Seleccionar un Producto</option>
+                        <option value="Producto1">Terapía Física</option>
+                        <option value="Producto2">Masaje</option>
+                        <option value="Producto3">Rehabilitación</option>
+                        <option value="Producto4">Exfoliación Corporal</option>
+                        <option value="Producto5">Radiofrecuencia</option>
+                        <option value="Producto6">Presoterapia</option>
+                        <option value="Producto7">Quiromasaje</option>
+                    </select>
+                    <br><br>    
+                    <label>Seleccione una Opcion</label>
+                    <br>
+                    <select id="Filtracion-type">
+                        <option value="disabled select">Seleccionar una Opción</option>
+                        <option value="Opción1">Cantidad de unidades vendidas</option>
+                        <option value="Opción2">Ventas por Sucursales</option>
+                        <option value="Opción3">Ingresos por ventas</option>
+                        <option value="Opción4">Productos más vendidos</option>
+                        <option value="Opción5">Margen de Beneficio</option>
+                        <option value="Opción6">Devoluciones</option>
+                        <option value="Opción7">Cancelaciones</option>
+                    </select> 
+                    
+                </div> 
+                <div class="Select-radio">
+                    <label>Periodo de Tiempo:</label><br>
+                    <input type="radio" name="select-radio" value="Semana"> Semana<br>
+                    <input type="radio" name="select-radio" value="Meses"> Mes<br>
+                    <input type="radio" name="select-radio" value="Años"> Año<br>
+                </div>
+                <input type="button" value="Actualizar">
+            </div> 
+        </div>
+
+    </div>
+
+</body>
+</html>

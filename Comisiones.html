@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comisiones</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e5bd296ab2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h2 class="title"><i class="fa-solid fa-percent"></i>&nbsp;Comisiones</h2>
+        <div class="todos">
+            <div class="headerComision">
+            <label>Nombre: <font><b>Usuario Empleado</b></font></label>
+            <a href="">Logout <i class="fa-solid fa-right-to-bracket"></i></a>
+            </div>
+            <div class="comisiones">
+                <div class="detallesEmpresa">
+                    <div class="informacionComision">
+                        <label id="NombreEmpresa"><h2>PhysioSpa</h2></label><br>
+                        <label id="InformacionEmpresa">Informacion Empresa: <br>
+                        RUC: 1934 <br>
+                        Dirección: Calle 123, Edificio 456, Piso 789, Ciudad de México <br>
+                    </label>
+                    </div>
+                    <div class="logoEmpresaInformacion">
+                        <img src="physioIcon.png">
+                    </div>
+                </div>
+                <div class="detallesComision">
+                    <table class="comisiones-table">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Concepto</th>
+                                <th>Monto</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tr>
+                            <td>01/11/2022</td>
+                            <td>Comision por Masaje</td>
+                            <td>$150.00</td>
+                            <td><button class="detallesComisionBtn">Detalles</button></td>
+                        </tr>
+                        <tr>
+                            <td>02/11/2022</td>
+                            <td>Comision por Masaje</td>
+                            <td>$150.00</td>
+                            <td><button class="detallesComisionBtn">Detalles</button></td>
+                        </tr>
+                        <tr>
+                            <td>02/11/2022</td>
+                            <td>Comision por Masaje</td>
+                            <td>$150.00</td>
+                            <td><button class="detallesComisionBtn">Detalles</button></td>
+                        </tr>
+                    </table>
+                    <br><br>
+                    <table class="comisionesTotal-table">
+                        <thead>
+                            <th>Total</th>
+                            <th>Acciones</th>
+                        </thead>
+                        <tr>
+                            <td>$450.00</td>
+                            <td><button id="imprimirPDF">Imprimir PDF</button></td>
+                        </tr>
+                    </table>    
+                </div>
+                <div class="botones">
+                    
+                </div>  
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,167 @@
+/* Importa la fuente */
+@import url('https://fonts.googleapis.com/css?family=Roboto:wght@300;400;500;700&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.267);
+    padding: 30px;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+/* Estilos para el logo giratorio en eje Y */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.logo-img {
+    animation: spin-vertical 5s linear infinite; /* Rotación en el eje Y */
+    transform-origin: center center;
+}
+
+/* Animación de rotación en el eje Y */
+@keyframes spin-vertical {
+    from { transform: rotateY(0deg); }
+    to { transform: rotateY(360deg); }
+}
+
+/* Estilos del carrusel y otros elementos */
+.carrousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 50vh;
+    margin-top: 20px;
+}
+
+.atras img, .adelante img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.imagenes {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+}
+
+.img {
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    height: 300px;
+    width: 600px;
+    border-radius: 15px;
+    margin: 5px;
+    object-fit: cover;
+    filter: saturate(175%);
+}
+
+.texto {
+    overflow: hidden;
+    position: absolute;
+    bottom: 10px;
+    flex-direction: column;
+    background-color: rgba(63, 106, 138, 0.21);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+}
+
+.texto h3 {
+    text-shadow: 0px 0px 15px black;
+    color: white;
+    font-weight: 300;
+    font-size: 27px;
+}
+
+.texto p {
+    padding: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 15px black;
+    font-size: 0px;
+    font-weight: 300;
+}
+
+.imagenes:hover .texto p {
+    font-size: 23px;
+    transition: font-size 0.2s linear;
+    text-shadow: 0px 0px 0px #000;
+}
+
+.puntos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.puntos p {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+}
+
+.puntos .bold {
+    font-size: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #5e17eb;
+}
+
+/*Estilos para los botones de Ubicacion y más*/
+
+.iconosRedes{
+    background-color: rgba(185, 185, 185, 0.767);
+    display: flex;
+    padding: 20px;
+    margin: auto;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.85);
+    border-radius: 10px;
+}
+
+.ubicacion{
+    padding: 10px;
+}
+
+.redes{
+   
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+#facebook{
+    padding: 10px;
+}
+#instagram{
+    padding: 10px;
+}
+#tiktok{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: small;
+}

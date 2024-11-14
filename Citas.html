@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Citas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e5bd296ab2.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <br>
+    <div class="container">
+        <h2 class="title"><span class="icon"><i class="fa-solid fa-calendar-days"></i></span>Gestión de Citas</h2>
+        <br><br>
+        <div class="cliente">
+            <label for="nombre">Nombre del Paciente</label>
+            <input type="text-nombre" id="nombre" name="nombre" required>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="id">Buscar por ID</label>
+            <input type="number" id="id" name="id" required>
+            <input type="submit" class="Buscar" value="Buscar">
+        </div>
+
+        <br>
+
+        <div class="calendario-cuadro">
+            <div class="calendar">
+                <label for="appointment-date">Fecha:</label>
+                <br><br>
+                <center><table class="calendar-table">
+                    <thead>
+                        <tr>
+                            <th colspan="7">< NOVIEMBRE 2024 ></th>
+                        </tr>
+                        <tr>
+                            <th>D</th>
+                            <th>L</th>
+                            <th>M</th>
+                            <th>M</th>
+                            <th>J</th>
+                            <th>V</th>
+                            <th>S</th>
+                        </tr>
+                        <tr>
+                            <td><font color="silver"><b>27</b></font></td>
+                            <td><font color="silver"><b>28</b></font></td>
+                            <td><font color="silver"><b>29</b></font></td>
+                            <td><font color="silver"><b>30</b></font></td>
+                            <td><font color="silver"><b>31</b></font></td>
+                            <td><font color=03b603><b>1</b></font></td>
+                            <td><font color="gray"><b>2</b></font></td>
+                        </tr>
+                        <tr>
+                            <td><font color="gray"><b>3</b></font></td>
+                            <td><font color=03b603><b>4</b></font></td>
+                            <td><font color=03b603><b>5</b></font></td>
+                            <td><font color=03b603><b>6</b></font></td>
+                            <td><font color=03b603><b>7</b></font></td>
+                            <td><font color=03b603><b>8</b></font></td>
+                            <td><font color="gray"><b>9</b></font></td>
+                        </tr>
+                        <tr>
+                            <td><font color="gray"><b>10</b></font></td>
+                            <td><font color=03b603><b>11</b></font></td>
+                            <td><font color=DB160F><b>12</b></font></td>
+                            <td><font color=DB160F><b>13</b></font></td>
+                            <td><font color=03b603><b>14</b></font></td>
+                            <td><font color=03b603><b>15</b></font></td>
+                            <td><font color="gray"><b>16</b></font></td>
+                        </tr>
+                        <tr>
+                            <td><font color="gray"><b>17</b></font></td>
+                            <td><font color=03b603><b>18</b></font></td>
+                            <td><font color=DB160F><b>19</b></font></td>
+                            <td><font color=03b603><b>20</b></font></td>
+                            <td><font color=03b603><b>21</b></font></td>
+                            <td><font color="blue"><b>22</b></font></td>
+                            <td><font color="gray"><b>23</b></font></td>
+                        </tr>
+                        <tr>
+                            <td><font color="gray"><b>24</b></font></td>
+                            <td><font color=03b603><b>25</b></font></td>
+                            <td><font color=03b603><b>26</b></font></td>
+                            <td><font color=DB160F><b>27</b></font></td>
+                            <td><font color="blue"><b>28</b></font></td>
+                            <td><font color=03b603><b>29</b></font></td>
+                            <td><font color="gray"><b>30</b></font></td>
+                        </tr>
+                    </thead>
+                </table></center>
+            </div>
+            <div id="simbologia">
+                <table class="disponibilidad-table">
+                    <tr>
+                        <th>Color</th>
+                        <th>Descripcion</th>
+                    </tr>
+                    <tr>
+                        <td id="colorDisponible"></td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td id="colorNoDisponible"></td>
+                        <td>No Disponible</td>
+                    </tr>
+                    <tr>
+                        <td id="colorReagendado"></td>
+                        <td>Reagendado</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <br><br>
+        <div class="hora">
+            <label for="appointment-time">Hora</label>
+            <input type="time" id="appointment-time" name="appointment-time" required>
+            <br>
+        
+            <div class="tipodeTerapia">
+                <br>
+                <label for="therapy-type">Tipo de Terapia</label>
+    
+                <select id="therapy-type" required>
+                    <option value="disabled select">Seleccionar Tipo de Terapia</option>
+                    <option value="Producto1">Terapía Física</option>
+                    <option value="Producto2">Masaje</option>
+                    <option value="Producto3">Rehabilitación</option>
+                    <option value="Producto4">Exfoliación Corporal</option>
+                    <option value="Producto5">Radiofrecuencia</option>
+                    <option value="Producto6">Presoterapia</option>
+                    <option value="Producto7">Quiromasaje</option>
+
+                </select>
+                <button class="add-btn">Agregar Nueva CIta</button>
+            </div>
+        </div>
+
+    </div>
+
+    <br><br>
+        <div class="container">
+            <h2>Citas Agendadas</h2>
+            <table class="citas_agendadas">
+                <thead>
+                    <tr>
+                        <th>Folio</th>
+                        <th>Cliente</th>
+                        <th>Tipo de terapia</th>
+                        <th>Fecha (dd/mm/aaaa)</th>
+                        <th>Hora (hh:mm)</th>
+                        <th>Estado de Cita</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>234</td>
+                        <td>Julian Alberto</td>
+                        <td>Terapía Física</td>
+                        <td>19/11/2024</td>
+                        <td>05:00 p.m.</td>
+                        <td><font color="red"><b>Cancelada</b></font></td>
+                        <td> <button class="delete-btn">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>235</td>
+                        <td>Pedro Navajas</td>
+                        <td>Masaje</td>
+                        <td>24/11/2014</td>
+                        <td>06:15 p.m.</td>
+                        <td><font color="orange"><b>Pendiente</b></font></td>
+                        <td> <button class="delete-btn">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>236</td>
+                        <td>Llorena Barrera</td>
+                        <td>Rehabilitación</td>
+                        <td>27green/2024</td>
+                        <td>04:00 p.m.</td>
+                        <td><font color="green"><b>Confirmada</b></font></td>
+                        <td> <button class="delete-btn">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <button class="delete-btn">Imprimir PDF</button>
+        </div>
+    
+</body>
+</html>
